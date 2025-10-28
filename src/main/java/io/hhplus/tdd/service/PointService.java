@@ -22,7 +22,15 @@ public class PointService {
      * @return UserPoint
      */
     public UserPoint findUserPointByUserId(long userId) {
-//        serviceValidation.isValidUserId(userId);
         return userPointTable.selectById(userId);
+    }
+
+    /** userPointCharge
+     * userid 로 amount 생성 or 수정
+     * @param userId, amount
+     * @return UserPoint
+     */
+    public UserPoint userPointCharge(long userId, long amount) {
+        return userPointTable.insertOrUpdate(userId, amount);
     }
 }
