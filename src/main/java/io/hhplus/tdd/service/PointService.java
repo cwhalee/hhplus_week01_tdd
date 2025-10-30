@@ -31,6 +31,8 @@ public class PointService {
      * @return UserPoint
      */
     public UserPoint userPointCharge(long userId, long amount) {
-        return userPointTable.insertOrUpdate(userId, amount);
+        UserPoint userPoint = new UserPoint();
+
+        return userPointTable.insertOrUpdate(userId, chargeAmount);
     }
 }
