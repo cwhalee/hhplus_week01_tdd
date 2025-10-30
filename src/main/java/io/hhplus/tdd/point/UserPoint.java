@@ -31,6 +31,7 @@ public record UserPoint(
         if( (this.point+pointToCharge) > maxPoint ) {
             throw new UserPointException(POINT_STATUS.CHARGE_POINT_OVERFLOW);
         }
+
         return this.point+pointToCharge;
     }
 
