@@ -1,0 +1,12 @@
+package io.hhplus.tdd.point;
+
+public enum POINT_STATUS {
+    INVALID_USERID,
+    INVALID_CHARGE_AMOUNT,
+
+    CHARGE_POINT_OVERFLOW,
+    INVALID_USE_AMOUNT,
+
+    USED_POINT_UNDERFLOW;
+
+}
